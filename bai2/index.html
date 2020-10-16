@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        }
+        .quiz-box{
+            width: 500px;
+            height:500px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: aquamarine;
+        }
+        .score{
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            justify-content: center;
+            align-items: center;
+            background-color: bisque;
+            text-align: center;
+        }
+        .question-text{
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+        .answer{
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+        }
+        button{
+            display: flex;
+            display: block;
+            margin-top: 10px;
+            width: 200px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 2px;
+        }
+        .btn-next{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+    <div class="quiz-box">
+        <div class="score">
+            
+        </div>
+        <div class="question-text">
+
+        </div>
+        <div class="answer">
+
+        </div>
+        <div class="point">
+
+        </div>
+        <button type='button' class="btn btn-next" onclick='next()'>Next</button>
+    </div>
+    <script src="script.js"></script>
+</body> 
+</html>
